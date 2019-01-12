@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marvel Movie Trivia</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Staatliches" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- This DIV is displayed to start the game -->
+    <div class="container-start">
+        <img src="assets/images/headerimg.png" id="header-image">
+        <h1 id="title">Marvel Movie Trivia Game</h1>
+        <input type="button" class="button" id="start-button" value="Start">
+
+        <!-- This DIV contains the questions, displayed once start button is clicked -->
+        <div class="container-game">
+
+            <h2 class="question-text">Time Remaining: <span id="timer">60</span> Seconds</h2>
+
+            <h2 class="question-text">Which war did Captain America fight in?</h2>
+            <ul>
+                <li class="q1" data-value="Civil War">Civil War</li>
+                <li class="q1" data-value="WWI">WWI</li>
+                <li class="q1" data-value="WWII">WWII</li>
+                <li class="q1" data-value="Vietnam War">Vietnam War</li>
+            </ul>
+
+            <h2 class="question-text">How many infinity stones are there?</h2>
+            <ul>
+                <li class="q2" data-value="4">4
+                <li class="q2" data-value="5">5
+                <li class="q2" data-value="6">6
+                <li class="q2" data-value="8">8
+            </ul>
+
+            <h2 class="question-text">Which Marvel film did Spider-Man first appear in?</h2>
+            <ul>
+                <li class="q3" data-value="Spider-Man: Homecoming">Spider-Man: Homecoming</li>
+                <li class="q3" data-value="Avengers">Avengers</li>
+                <li class="q3" data-value="Iron Man 2">Iron Man 2</li>
+                <li class="q3" data-value="Captain America: Civil War">Captain America: Civil War</li>
+            </ul>
+
+            <h2 class="question-text">What planet is Thor from?</h2>
+            <ul>
+                <li class="q4" data-value="Asgard">Asgard</li>
+                <li class="q4" data-value="Midgard">Midgard</li>
+                <li class="q4" data-value="Alfheim">Alfheim</li>
+                <li class="q4" data-value="Ragnarok">Ragnar&ouml;k</li>
+            </ul>
+
+            <h2 class="question-text">True or False: Tony Stark founded Stark Industries.</h2>
+            <ul class="inline">
+                <li class="q5" data-value="True">True
+                <li class="q5" data-value="False">False
+            </ul>
+
+            <input type="button" class="button" id="submit-button" name="submit" value="Submit">
+
+        </div>
+
+        <!-- This DIV is displayed when the timer runs out -->
+        <div class="container-timeout">
+            <img class="img" src="assets/images/hulk.png">
+            <h1 class="banner">You ran out of time!</h1>
+            <input type="button" class="button" id="reload-button" name="reload" value="Try Again!">
+
+        </div>
+
+        <!-- This DIV is displayed when the submit button is clicked -->
+        <div class="container-answers">
+            <img class="img" src="assets/images/stanlee.png">
+            <h1 class="banner">You scored <span id="score"></span> out of a possible 100%</h1>
+            <div class="facts">
+                <img class="smallimg" src="assets/images/cap.jpg">
+                <p>Captain America fought the Nazi menace in WWII.</p>
+                <img class="smallimg" src="assets/images/infinitystones.jpg">
+                <p>There are a total of 6 Infinity Stones: the Space Stone, the Reality Stone, the Power Stone, the
+                    Mind Stone, the Time Stone and the Soul Stone.</p>
+                <img class="smallimg" src="assets/images/spiderman.jpg">
+                <p>Spiderman's first appearance in a Marvel film was in 2016's 'Captain America: Civil War'.</p>
+                <img class="smallimg" src="assets/images/asgard.jpg">
+                <p>Thor is from Asgard, one of Nine Realms in the Asgardian dimension.</p>
+                <img class="smallimg" src="assets/images/stark.jpg">
+                <p>Stark Industries is a defense company that was founded by Isaac Stark, Sr., Tony Stark's
+                    grandfather.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

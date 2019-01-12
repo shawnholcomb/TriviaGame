@@ -1,0 +1,142 @@
+/* Shared formatting */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../images/bodybg.jpg");
+    font-family: 'Staatliches', cursive;
+}
+
+
+/* Starting div */
+.container-start {
+    max-width: 960px;
+    width: 80%;
+    margin: 50px auto;
+    background: #fff;
+    border: solid 2px #000;
+    padding: 0 0 25px 0;
+    text-align: center;
+}
+
+#header-image {
+    width: 100%;
+}
+
+#title {
+    font-size: 52px;
+}
+
+.button {
+    background: red;
+    border: solid 2px #000;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 28px;
+    padding: 10px 20px;
+}
+
+.button:hover {
+    background: url("../images/bodybg.jpg"); 
+}
+
+/* Question div */
+.container-game {
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 24px;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+#timer {
+    color: red;
+    font-weight: bold;
+    font-size: 32px; 
+}
+
+.question-text {
+    font-size: 32px;
+    margin: 35px 0 15px 0;
+    font-weight: bolder;
+}
+
+li {
+    margin-left: 30%;
+    margin-bottom: 5px;
+    width: 40%;
+    padding: 5px;
+    border: solid 2px #fff;
+}
+
+li:hover {
+    border: solid 2px #000;
+    background: red;
+    color: #fff;
+}
+
+.inline {
+    display: inline;
+}
+
+.active {
+    border: solid 2px #000;
+    background: url("../images/bodybg.jpg");
+    color: #fff;
+}
+
+/* DIV displayed when timer runs out */
+.container-timeout {
+    display: none;
+}
+
+.banner {
+    width: 100%;
+    text-align: center;
+    font-size: 52px;
+    margin-top: 20px;
+}
+
+.img {
+    width: 80%;
+    margin-top: 25px;
+}
+
+/* DIV when submitted */
+.container-answers {
+    display: none;
+    text-align: center;
+    line-height: 180%;
+    position: relative;    
+}
+
+#score {
+    color: red;
+    text-shadow: 1px 1px grey;
+}
+
+.facts {
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin: 0px auto 20px;
+    width: 80%;
+    border: 2px solid #000;
+    background: #fff;
+    padding: 10px 5px;
+    position: relative;
+    bottom: 45px;
+    box-shadow: 3px 3px 2px grey;
+
+}
+
+.smallimg {
+    width: 60%;
+    margin-top: 15px;
+    border: 2px solid #000;
+}
