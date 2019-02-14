@@ -1,4 +1,4 @@
-Trivia Game - Marvel Movie Trivia
+# Trivia Game - Marvel Movie Trivia
 
 ![Logo](http://i66.tinypic.com/b6zux2.png)
 
